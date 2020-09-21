@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "op": "null", 
+      "name": "data", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "dense2_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(1, 0)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "dense2_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(1,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "FullyConnected", 
+      "name": "dense2_fwd", 
+      "attrs": {
+        "flatten": "True", 
+        "no_bias": "False", 
+        "num_hidden": "1"
+      }, 
+      "inputs": [[0, 0, 0], [1, 0, 0], [2, 0, 0]]
+    }
+  ], 
+  "arg_nodes": [0, 1, 2], 
+  "node_row_ptr": [0, 1, 2, 3, 4], 
+  "heads": [[3, 0, 0]], 
+  "attrs": {"mxnet_version": ["int", 10700]}
+}
