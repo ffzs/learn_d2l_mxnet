@@ -7,11 +7,11 @@
     }, 
     {
       "op": "null", 
-      "name": "dense2_weight", 
+      "name": "dense18_weight", 
       "attrs": {
         "__dtype__": "0", 
         "__lr_mult__": "1.0", 
-        "__shape__": "(1, 0)", 
+        "__shape__": "(1, -1)", 
         "__storage_type__": "0", 
         "__wd_mult__": "1.0"
       }, 
@@ -19,7 +19,7 @@
     }, 
     {
       "op": "null", 
-      "name": "dense2_bias", 
+      "name": "dense18_bias", 
       "attrs": {
         "__dtype__": "0", 
         "__init__": "zeros", 
@@ -32,7 +32,7 @@
     }, 
     {
       "op": "FullyConnected", 
-      "name": "dense2_fwd", 
+      "name": "dense18_fwd", 
       "attrs": {
         "flatten": "True", 
         "no_bias": "False", 
@@ -44,5 +44,8 @@
   "arg_nodes": [0, 1, 2], 
   "node_row_ptr": [0, 1, 2, 3, 4], 
   "heads": [[3, 0, 0]], 
-  "attrs": {"mxnet_version": ["int", 10700]}
+  "attrs": {
+    "is_np_shape": ["int", 1], 
+    "mxnet_version": ["int", 10700]
+  }
 }
